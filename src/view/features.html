@@ -1,0 +1,63 @@
+<div class="wid">
+  <a name="features"></a>
+  <h2 class="mb-8 text-3xl">Features</h2>
+
+  <div class="mb-8">
+    <h2 class="mb-3 text-lg">Data driven templates</h2>
+    <p>
+      HTML templates using variables and loops, powered by
+      <a
+        class="text-pink-300 hover:underline"
+        href="https://github.com/posthtml/posthtml-expressions"
+        >posthtml-expressions</a
+      >
+    </p>
+    <div
+      class="mb-8 rounded bg-gradient-to-br from-pink-600 via-purple-600 to-indigo-600 p-10 text-center"
+    >
+      <div
+        class="inline-block rounded-xl border border-gray-500 bg-[#272822] px-5 shadow-xl shadow-black/40"
+      >
+        <div class="py-3 text-sm font-bold text-gray-400">index.html</div>
+        <pre class="language-html m-0 inline-block pt-0">
+<code><raw><each loop="review in reviews">
+  <h3>{{ review.title }}</h3>
+  <p>{{ review.content }}</p>
+</each></raw></code></pre>
+      </div>
+    </div>
+
+    <div class="mb-8">
+      <h2 class="mb-3 text-lg">Make it your own</h2>
+      <p class="mb-2">
+        Customize your build however you'd like! All configuration is out in the open. Edit build
+        settings, add or remove plugins and features.
+      </p>
+      <p>
+        Add any other tailwind component libraries, like
+        <a class="text-pink-500 hover:underline" href="https://daisyui.com/docs/install/">daisyUI</a
+        >,
+        <a
+          class="text-pink-500 hover:underline"
+          href="https://www.ripple-ui.com/docs/get-started/installation"
+          >RippleUI</a
+        >,
+        <a class="text-pink-500 hover:underline" href="https://tailblocks.cc/">TailBlocks</a> etc.
+      </p>
+    </div>
+
+    <div class="mb-8">
+      <h2 class="mb-3 text-lg">Better living through post-processing</h2>
+
+      <ul>
+        <li>
+          Automatically prefix classes with
+          <code class="inline-code">custom-</code>
+          in both HTML and CSS.
+        </li>
+        <li>Add vendor prefixes for non-standard CSS features for better support.</li>
+        <li>Minify HTML and CSS</li>
+      </ul>
+    </div>
+  </div>
+</div>

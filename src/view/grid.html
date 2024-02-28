@@ -1,0 +1,14 @@
+<h3 class="text-xl">Grid</h3>
+<div class="p4">
+  <each
+    loop="row in [{cols: 8, gridClass: 'grid-cols-8'}, { cols: 5, gridClass: 'grid-cols-5'}, { cols: 3, gridClass: 'grid-cols-3' }]"
+  >
+    <div class="grid {{row.gridClass}} gap-2 mb-2">
+      <each loop="item in Array(row.cols)">
+        <div
+          class="h-6 items-center justify-center rounded-lg bg-pink-500 shadow-lg transition-all hover:-translate-y-1 hover:bg-pink-600"
+        ></div>
+      </each>
+    </div>
+  </each>
+</div>

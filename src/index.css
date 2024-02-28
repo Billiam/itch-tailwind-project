@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+@import 'prism.css' layer(components);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional resets */
+@layer base {
+  .user_formatted {
+    p,
+    ol,
+    ul {
+      line-height: inherit;
+    }
+    hr {
+      background: none;
+      border-top-style: solid;
+    }
+  }
+  .inner_column {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 800;
+    }
+  }
+}
+@layer components {
+  /* full page width overrides */
+  .formatted_description {
+    @apply m-0 !important;
+  }
+  .columns {
+    @apply mt-0 !important;
+  }
+  .inner_column > .header,
+  .right_col,
+  .header_buy_row {
+    display: none !important;
+  }
+  .inner_column {
+    @apply max-w-full !important;
+  }
+  .main.wrapper {
+    @apply px-0 !important;
+  }
+  .more_information_toggle {
+    @apply mx-0 max-w-full text-center !important;
+    .toggle_row,
+    .info_panel_wrapper {
+      @apply mx-auto max-w-screen-md !important;
+    }
+  }
+  .game_info_panel_widget {
+    @apply bg-gray-900 !important;
+  }
+
+  h2#download,
+  .buy_row,
+  .uploads {
+    @apply wid mx-auto box-border !important;
+  }
+  .uploads {
+    > p,
+    > .upload_list_widget {
+      @apply mx-0 !important;
+    }
+  }
+  .game_comments_widget {
+    @apply max-w-full text-center !important;
+
+    > * {
+      @apply wid mx-auto box-border text-left !important;
+    }
+  }
+
+  .inline-code {
+    @apply rounded border border-slate-600 bg-slate-800 px-1 py-1 text-sm text-slate-300 !important;
+  }
+
+  .wid {
+    @apply w-full max-w-screen-sm px-6 lg:max-w-screen-md;
+  }
+}
