@@ -9,6 +9,7 @@
   },
   "type": "module",
   "devDependencies": {
+    "@iconify/json": "^2.2.187",
     "@iconify/tailwind": "^0.1.4",
     "@tailwindcss/typography": "tailwindcss/typography",
     "@vituum/vite-plugin-posthtml": "^1.1.0",
